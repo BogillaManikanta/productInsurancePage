@@ -5,7 +5,7 @@ import csvFile from '../assets/csvFile.csv';
 function ProductMatrix({ filter }) {
   const [csvData, setCsvData] = useState([]);
   const [filteredData, setFilteredData] = useState([]);
-
+  console.log(csvData)
   useEffect(() => {
     const loadCSVData = async () => {
       try {
